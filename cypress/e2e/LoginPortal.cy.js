@@ -15,6 +15,8 @@ describe("Contact functionality Test",() => {
         })
 
         cy.get('#text').type ('Becca01')
+        cy.get('#password').type('BEE12');
+        cy.get('#login-button').click();
     
      })
 
