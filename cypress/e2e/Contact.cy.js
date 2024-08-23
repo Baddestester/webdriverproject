@@ -6,10 +6,9 @@ describe("Contact functionality Test",() => {
         cy.visit('https://webdriveruniversity.com/index.html');
         //cy.get('#contact-us > .thumbnail > .section-title > h1').click()// Contact feature/ Class
         cy.get('#contact-us').should('be.visible')
-        .then(($button)=> {
+        .then(($button)=>{
             const url = $button.prop('href');
-            cy.visit(url);
-        })
+            cy.visit(url);})
         cy.get('[name="first_name"]').type('Becca');
         cy.get('[name="last_name"]').type('Edo');
         cy.get('[name="email"]').type('becca94@yopmail.com');

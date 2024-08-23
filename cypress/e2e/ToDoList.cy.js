@@ -4,8 +4,8 @@ describe("Contact functionality Test",() => {
 
     it('Verify that To Do List feature is functional', () => {
         cy.visit('https://webdriveruniversity.com/index.html');
-        cy.get('#to-do-list').should('be.visible');
-        cy.get('#to-do-list').click()
+        cy.get('#to-do-list').should('be.visible')
+       // cy.get('#to-do-list').click()
         .then(($button) => {
             const url = $button.prop('href');
             cy.visit(url);

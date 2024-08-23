@@ -7,8 +7,8 @@ describe("Contact functionality Test",() => {
      })
 
      it.only('Verify that the login feature is functional', () => {
-        cy.get('#login-portal').should('be.visible');
-        cy.get('#login-portal').click()
+        cy.get('#login-portal').should('be.visible')
+        //cy.get('#login-portal').click()
         .then(($button) => {
             const url = $button.prop('href');
             cy.visit(url);
@@ -18,7 +18,8 @@ describe("Contact functionality Test",() => {
         cy.get('#password').type('BEE12');
         cy.get('#login-button').click();
     
-     })
+    })
 
 
 })    
+
